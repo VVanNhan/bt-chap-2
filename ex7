@@ -1,0 +1,6 @@
+public class ex7 {
+    public static void main(String[] args) {
+        person person = new person("Nhan",18,"Da Nang");
+        person.Teacher teacher = new person.Teacher("Anh", 19, "Da Nang", "VKU", "LT huong doi tuong");
+    }
+}
