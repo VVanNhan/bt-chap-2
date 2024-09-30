@@ -1,0 +1,25 @@
+public class ex1 {
+    public static void main(String[] args) {
+        char sampleChar = 'N';
+        boolean isDigit = Character.isDigit(sampleChar);
+        System.out.println("Is digit: " + isDigit);
+        boolean isLetter = Character.isLetter(sampleChar);
+        System.out.println("Is letter: " + isLetter);
+        boolean isLowerCase = Character.isLowerCase(sampleChar);
+        System.out.println("Is lower case: " + isLowerCase);
+        boolean isUpperCase = Character.isUpperCase(sampleChar);
+        System.out.println("Is upper case: " + isUpperCase);
+        char lowerChar = Character.toLowerCase(sampleChar);
+        System.out.println("Lower case: " + lowerChar);
+        char upperChar = Character.toUpperCase(Character.toLowerCase(sampleChar));
+        System.out.println("Upper case: " + upperChar);
+        boolean isWhitespace = Character.isWhitespace(' ');
+        System.out.println("Is whitespace: " + isWhitespace);
+        boolean isLetterOrDigit = Character.isLetterOrDigit(sampleChar);
+        System.out.println("Is letter or digit: " + isLetterOrDigit);
+        int charType = Character.getType(sampleChar);
+        System.out.println("Character type: " + charType);
+        int digitValue = Character.digit('5', 10);
+        System.out.println("Digit value of '5': " + digitValue);
+    }
+}
