@@ -1,0 +1,17 @@
+public class ex4 {
+    public static void main(String[] args) {
+        Integer intValue = 42;
+        Double doubleValue = 3.14;
+        int intResult = intValue.intValue();
+        System.out.println("Integer value: " + intResult);
+        double doubleResult = doubleValue.doubleValue();
+        System.out.println("Double value: " + doubleResult);
+        Integer anotherIntValue = 100;
+        int comparisonResult = intValue.compareTo(anotherIntValue);
+        System.out.println("Comparison result: " + comparisonResult);
+        String intAsString = intValue.toString();
+        System.out.println("Integer as String: " + intAsString);
+        float floatResult = doubleValue.floatValue();
+        System.out.println("Float value: " + floatResult);
+    }
+}
