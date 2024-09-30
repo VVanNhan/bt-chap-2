@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class ex5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Student student = new Student("Nhan", 18);
+        System.out.println("Nhap so mon hoc: ");
+        int soluongmon = sc.nextInt();
+        double tongDiem = 0;
+        for(int i = 1; i <= soluongmon; i++) {
+            System.out.println("Nhap diem mon thu "+ i + ": ");
+            double diem = sc.nextDouble();
+            tongDiem += diem;
+        }
+        double diemtrungbinh = tongDiem/soluongmon;
+        System.out.println("Diem trung binh la " + diemtrungbinh + ": ");
+    }
+}
