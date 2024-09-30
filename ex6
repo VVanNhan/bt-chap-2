@@ -1,0 +1,6 @@
+public class ex6 {
+    public static void main(String[] args) {
+     company company = new company("Nhan","Da Nang",300000,900000);
+        company.displayInformation();
+    }
+}
