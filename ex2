@@ -1,0 +1,25 @@
+public class ex2 {
+    public static void main(String[] args) {
+        StringBuffer buffer = new StringBuffer("Van");
+        buffer.append(" Nhan");
+        System.out.println("After append: " + buffer);
+        buffer.insert(5, ",");
+        System.out.println("After insert: " + buffer);
+        buffer.delete(5, 6);
+        System.out.println("After delete: " + buffer);
+        buffer.replace(6, 11, "Java");
+        System.out.println("After replace: " + buffer);
+        buffer.reverse();
+        System.out.println("After reverse: " + buffer);
+        int capacity = buffer.capacity();
+        System.out.println("Capacity: " + capacity);
+        int length = buffer.length();
+        System.out.println("Length: " + length);
+        char charAtIndex = buffer.charAt(0);
+        System.out.println("Character at index 0: " + charAtIndex);
+        int index = buffer.indexOf("a");
+        System.out.println("Index of 'a': " + index);
+        String substring = buffer.substring(0, 5);
+        System.out.println("Substring (0 to 5): " + substring);
+    }
+}
