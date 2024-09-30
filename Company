@@ -1,0 +1,26 @@
+public class company {
+    String name;
+    String address;
+    double cost;
+    double income;
+
+    company(String name, String address, double cost, double income) {
+        System.out.println(name + " " + address + " " + cost + " " + income);
+        this.name = name;
+        this.address = address;
+        this.cost = cost;
+        this.income = income;
+    }
+
+    public double calculateBenefit() {
+        return income - cost;
+    }
+
+    public void displayInformation() {
+        System.out.println("Company Name: " + name);
+        System.out.println("Address: " + address);
+        System.out.println("Cost: " + cost);
+        System.out.println("Income: " + income);
+        System.out.println("Benefit: " + calculateBenefit());
+    }
+}
