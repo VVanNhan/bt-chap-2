@@ -1,0 +1,31 @@
+import java.util.Random;
+public class ex3 {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int randomInt = random.nextInt();
+        System.out.println("Random integer: " + randomInt);
+        int randomIntBound = random.nextInt(100);
+        System.out.println("Random integer (0-99): " + randomIntBound);
+        double randomDouble = random.nextDouble();
+        System.out.println("Random double: " + randomDouble);
+        float randomFloat = random.nextFloat();
+        System.out.println("Random float: " + randomFloat);
+        long randomLong = random.nextLong();
+        System.out.println("Random long: " + randomLong);
+        boolean randomBoolean = random.nextBoolean();
+        System.out.println("Random boolean: " + randomBoolean);
+        double randomGaussian = random.nextGaussian();
+        System.out.println("Random Gaussian (normal distribution): " + randomGaussian);
+        byte[] randomBytes = new byte[5];
+        random.nextBytes(randomBytes);
+        System.out.print("Random bytes: ");
+        for (byte b : randomBytes) {
+            System.out.print(b + " ");
+        }
+        System.out.println();
+        random.setSeed(12345);
+        System.out.println("Random integer after setting seed: " + random.nextInt(100));
+        int randomIntRange = random.nextInt(50) + 50;
+        System.out.println("Random integer (50-99): " + randomIntRange);
+    }
+}
