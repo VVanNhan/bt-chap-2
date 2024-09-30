@@ -1,0 +1,25 @@
+public class person {
+    String name;
+    int age;
+    String address;
+
+    public person(String name, int age, String address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        System.out.println(name + " " + age + " " + address);
+    }
+
+    static class Teacher extends person {
+        String institution;
+        String[] courses;
+
+        public Teacher(String name, int age, String address, String institution, String courses) {
+            super(name, age, address);
+            this.institution = institution;
+            this.courses = new String[]{courses};
+            System.out.println( institution + " " + courses);
+        }
+
+    }
+}
